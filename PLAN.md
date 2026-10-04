@@ -390,10 +390,6 @@ nowhere in `js/`.*
 
 ## Known gaps
 
-- **The game has never been opened in a browser.** Rendering is verified by
-  string-level tests and XSS assertions, not by looking at it. CSS layout,
-  tap-target sizing, `aria-live` behaviour and the console-error criterion are
-  all unverified. This is the first thing to close.
 - **Duplicate themes across content files.** Several independently written files
   cover the same beat: `romance_widowed` and `elder_widowed`,
   `romance_remarry` and `elder_remarry`, `family_inheritance` and
@@ -401,5 +397,3 @@ nowhere in `js/`.*
   `once: true`, which limits the damage, but a trim pass is available.
 - **The `assets` and `life` categories are thin** — 3 and 5 events against 20–40
   elsewhere. Harmless to the fuzz suite, possibly noticeable in play.
-- **Nothing is committed.** There is no git repository; the work exists on disk
-  only.

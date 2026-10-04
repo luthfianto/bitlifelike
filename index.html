@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="BitLife-style text life simulator. Plays offline, straight from this file.">
+  <title>BitLife</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎲</text></svg>">
+</head>
+<body>
+  <main id="app" class="app"></main>
+
+  <noscript>
+    <p style="color:#eee;text-align:center;padding:2rem">This game needs JavaScript enabled.</p>
+  </noscript>
+
+  <!--
+    Scripts are classic (not modules) and MUST load in dependency order: a
+    classic script can only reference a class declared by an earlier one.
+    Module syntax is avoided deliberately so this file plays from file://.
+  -->
+
+  <!-- utilities -->
+  <script src="js/util/format.js"></script>
+  <script src="js/core/rng.js"></script>
+
+  <!-- data catalogs -->
+  <script src="js/data/names.js"></script>
+  <script src="js/data/cities.js"></script>
+  <script src="js/data/careers.js"></script>
+  <script src="js/data/catalog.js"></script>
+  <script src="js/data/crimes.js"></script>
+
+  <!-- core model -->
+  <script src="js/core/person.js"></script>
+  <script src="js/core/asset.js"></script>
+  <script src="js/core/game.js"></script>
+  <script src="js/core/events.js"></script>
+
+  <!-- core systems -->
+  <script src="js/core/career.js"></script>
+  <script src="js/core/education.js"></script>
+  <script src="js/core/relationships.js"></script>
+  <script src="js/core/portfolio.js"></script>
+  <script src="js/core/health.js"></script>
+  <script src="js/core/crime.js"></script>
+  <script src="js/core/prison.js"></script>
+  <script src="js/core/death.js"></script>
+  <script src="js/core/activities.js"></script>
+  <script src="js/core/year.js"></script>
+  <script src="js/core/save.js"></script>
+
+  <!-- event content -->
+  <script src="js/data/events/helpers.js"></script>
+  <script src="js/data/events/childhood.js"></script>
+  <script src="js/data/events/school.js"></script>
+  <script src="js/data/events/teen.js"></script>
+  <script src="js/data/events/romance.js"></script>
+  <script src="js/data/events/family.js"></script>
+  <script src="js/data/events/work.js"></script>
+  <script src="js/data/events/money.js"></script>
+  <script src="js/data/events/health.js"></script>
+  <script src="js/data/events/elder.js"></script>
+  <script src="js/data/events/crime.js"></script>
+  <script src="js/data/events/prison.js"></script>
+  <script src="js/data/events/random.js"></script>
+
+  <!-- interface -->
+  <script src="js/ui/dom.js"></script>
+  <script src="js/ui/screens.js"></script>
+  <script src="js/ui/app.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
